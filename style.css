@@ -1,0 +1,147 @@
+/* CSS BASIC RESET */
+
+html {
+  box-sizing: border-box;
+  /* Makes box go within its container */
+  font-family: "Karla", sans-serif;
+  font-size: 16px;
+  font-weight: 400px;
+}
+
+body {
+  padding: 20px;
+}
+
+h2,
+h4,
+p {
+  margin: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  /* Apply the border-box in the root level to every other element */
+}
+
+#card {
+  /* Main Container for all the project  */
+  width: 700px;
+  height: 400px;
+  box-shadow: 2px 3px 7px 0px rgba(0, 0, 0.35);
+  border-radius: 5px;
+
+  overflow: hidden;
+}
+
+#top-section {
+  width: 100%;
+  height: 45%;
+  padding: 25px;
+}
+
+#bottom-section {
+  width: 100%;
+  /* Take all the width space  */
+  height: 55%;
+
+  color: white;
+}
+
+#bottom-left-section {
+  display: inline-block;
+  width: 50%;
+  height: 100%;
+
+  vertical-align: top;
+  background-color: #2ab2af;
+
+  padding: 25px;
+}
+
+#bottom-right-section {
+  display: inline-block;
+  width: 49.3%;
+  height: 100%;
+
+  vertical-align: top;
+  background-color: #2ebdbd;
+
+  padding: 25px;
+}
+
+#top-section h2 {
+  color: #2ab2af;
+  margin-bottom: 20px;
+}
+
+#top-section h4 {
+  color: #c0df34;
+  margin-bottom: 10px;
+}
+
+#top-section p {
+  color: #98a6bd;
+}
+
+button {
+  color: white;
+
+  background-color: #c0df34;
+
+  border: none;
+
+  padding: 10px;
+
+  width: 100%;
+  /* 100% to the parent container  */
+
+  border-radius: 5px;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: #debe33;
+
+  transform: scale(1.02);
+  /* gets larger when getting over it  - 102% */
+}
+
+#price {
+  font-weight: 700;
+  font-size: 1.4rem;
+  /* 140% of the root size which is 16px - or 22.4px */
+}
+
+#bottom-left-section h4 {
+  margin-bottom: 25px;
+}
+
+#price-frequency,
+#price {
+  display: inline-block;
+}
+
+#price-frequency {
+  position: relative;
+  top: -3px;
+  /* In position relative, you can maneuver the item in itself */
+  font-size: 0.8rem;
+  opacity: 0.7;
+  margin-left: 5px;
+}
+
+#bottom-left-section p {
+  font-size: 0.8rem;
+  /* font -size - 80% of the original 16px font-size in the root element */
+  margin-bottom: 40px;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+
+  font-size: 0.8rem;
+  opacity: 0.8;
+}
